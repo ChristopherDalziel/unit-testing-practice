@@ -1,7 +1,6 @@
 let numArr = []
 
-const add = (num1,num2)=>
-{
+const add = (num1,num2) => {
     if(typeof(num1) !== "number" || typeof(num2) !== "number" )
     {
         throw new TypeError("Not a valid number");
@@ -10,11 +9,11 @@ const add = (num1,num2)=>
     return num1 + num2;
 }
 
-const addAll = (numArr) =>{
+const addAll = (numArr) => {
     return addAllTesting = numArr.reduce((a, b) => a+b );
 }
 
-const subtract = (num1,num2)=>{
+const subtract = (num1,num2) => {
     if(typeof(num1) !== "number" || typeof(num2) !== "number" )
     {
         throw new TypeError("Not a valid number");
@@ -22,7 +21,7 @@ const subtract = (num1,num2)=>{
     return num1 - num2;
 }
 
-const multiply = (num1,num2)=>{
+const multiply = (num1,num2) => {
     if(typeof(num1) !== "number" || typeof(num2) !== "number" )
     {
         throw new TypeError("Not a valid number");
@@ -30,10 +29,10 @@ const multiply = (num1,num2)=>{
     return num1 * num2
 }
 
-const multiplyAll = (numArr)=>{
+const multiplyAll = (numArr) => {
     return multiplyAllTesting = numArr.reduce((a, b) => a*b);
 }
-const divide = (num1,num2)=>{
+const divide = (num1,num2) => {
     if(typeof(num1) !== "number" || typeof(num2) !== "number" )
     {
         throw new TypeError("Not a valid number");
@@ -41,8 +40,7 @@ const divide = (num1,num2)=>{
     return num1 / num2
 }
 
-const printBinString = ( num ) =>
-{
+const printBinString = ( num ) => {
     let binString = "";
     if( num > 0 && num <= 1 )
     {

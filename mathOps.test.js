@@ -1,7 +1,6 @@
 const {add,addAll,subtract,multiply,multiplyAll,divide,printBinString} = require("./mathOps");
 
-test("This will test the addition of two numbers", () =>
-{
+test("This will test the addition of two numbers", () => {
     expect(add(10,5)).toBe(15);
 });
 
@@ -13,8 +12,7 @@ test("this will multiply all the numbers in the array into one", () => {
     expect(multiplyAll([8, 10, 2])).toBe(160);
 });
 
-test("This will test the validity of the input for the add function", () =>
-{
+test("This will test the validity of the input for the add function", () => {
     const inputValidity = () =>
     {
         add( "Hello "," World" );
@@ -22,8 +20,7 @@ test("This will test the validity of the input for the add function", () =>
     expect(inputValidity).toThrow(TypeError);
 });
 
-test( "Test if the console log of binary string is as expected", () =>
-  {
+test( "Test if the console log of binary string is as expected", () => {
     //spyOn first argument is the object you need to spy and the second
     //argument is the method you want to spy
     const log = jest.spyOn(global.console, 'log');
